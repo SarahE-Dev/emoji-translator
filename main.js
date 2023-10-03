@@ -1,7 +1,6 @@
-let goforit = document.querySelector('#submit-button');
-
-goforit.addEventListener('click', ()=>{
-    let thisinput = document.querySelector('#translator-input');
+// let goforit = document.querySelector('#submit-button');
+let thisinput = document.querySelector('#translator-input');
+thisinput.addEventListener('keydown', ()=>{
     let translateValue = thisinput.value;
     let output = document.querySelector('#results');
     let select = '';
@@ -50,5 +49,14 @@ goforit.addEventListener('click', ()=>{
             output.innerText = 'No emojis have been found that match your criteria.'
         }
     }
+    }
+})
+
+document.querySelector('#explanation').addEventListener('click', ()=>{
+    let list = document.querySelector('ul');
+    if(list.className === 'invisible'){
+        list.className = '';
+    }else{
+        list.className = 'invisible';
     }
 })

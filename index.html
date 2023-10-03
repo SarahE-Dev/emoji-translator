@@ -5,10 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Emoji Translator</title>
         <link href="./emoji.png" rel="shortcut icon" type="image/jpg"/>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <button id="explanation">Click here to learn what each selection does.</button>
+        <br>
+        <br>
+        <ul class="invisible">
+            <li>Encode will encrypt your text with an emoji for each letter.</li>
+            <li>Translate will give you the emoji for the word you type.</li>
+            <li>Madlib will randonly display an emoji for the category you enter.</li>
+            <li>Search will search for an emoji name that matches the letters you input.</li>
+            <li>Random will randomly choose one of the other four selections.</li>
+        </ul>
         <input type="text" id="translator-input">
-        <button id="submit-button">Submit</button>
+        <!-- <button id="submit-button">Submit</button> -->
         <form>
             <p>How would you like to translate?</p>
             <div class="radio-button-section">
